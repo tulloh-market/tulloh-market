@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>www.tullohmarket.com</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tulloh Market</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Website Saya</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">Tentang</a>
-            <a href="#contact">Kontak</a>
-        </nav>
-    </header>
+  <header>
+    <h1>🛒 Tulloh Market</h1>
+  </header>
 
-    <section id="home" class="hero">
-        <h2>Selamat Datang</h2>
-        <p>Website ini bisa diakses dan digunakan oleh orang lain.</p>
-        <button onclick="showMessage()">Klik Saya</button>
-    </section>
+  <section class="products">
+    <div class="product">
+      <h3>Kaos Polos</h3>
+      <p>Rp 50.000</p>
+      <button onclick="addToCart('Kaos Polos', 50000)">Tambah ke Keranjang</button>
+    </div>
 
-    <section id="about">
-        <h2>Tentang Website</h2>
-        <p>Website ini dibuat menggunakan HTML, CSS, dan JavaScript.</p>
-    </section>
+    <div class="product">
+      <h3>Hoodie</h3>
+      <p>Rp 150.000</p>
+      <button onclick="addToCart('Hoodie', 150000)">Tambah ke Keranjang</button>
+    </div>
 
-    <section id="contact">
-        <h2>Kontak</h2>
-        <form onsubmit="return submitForm()">
-            <input type="text" id="name" placeholder="Nama Anda" required>
-            <input type="email" id="email" placeholder="Email Anda" required>
-            <textarea placeholder="Pesan" required></textarea>
-            <button type="submit">Kirim</button>
-        </form>
-    </section>
+    <div class="product">
+      <h3>Topi</h3>
+      <p>Rp 30.000</p>
+      <button onclick="addToCart('Topi', 30000)">Tambah ke Keranjang</button>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2026 Website Saya</p>
-    </footer>
+  <section class="cart">
+    <h2>🛍 Keranjang Belanja</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: Rp <span id="total">0</span></h3>
+  </section>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
