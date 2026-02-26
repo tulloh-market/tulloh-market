@@ -73,8 +73,9 @@ function checkout() {
     message += `- ${item.name} (${formatRupiah(item.price)})%0A`;
   });
 
-  window.open(`https://wa.me/628XXXXXXXXXX?text=${message}`, "_blank");
+  window.open(`https://wa.me/6285649338619?text=${message}`, "_blank");
 }
 
 renderProducts();
 renderCart();
+
